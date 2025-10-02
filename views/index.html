@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Webcam Capture Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family: Arial; padding:20px; background:#f6f6f6}
+    .card{background:white;padding:16px;border-radius:8px;max-width:420px}
+    video, img{display:block; margin:10px 0; max-width:100%}
+    button{padding:8px 12px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Webcam Capture (consent required)</h2>
+    <p>Allow camera and click Capture. Image uploaded to server.</p>
+
+    <label><input type="checkbox" id="consent"> I consent to capture & upload</label>
+
+    <video id="video" autoplay playsinline width="320" height="240"></video>
+    <br />
+    <button id="captureBtn">Capture</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
+
